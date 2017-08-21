@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">POO</string>
+    <string name="vehicle_type_select">Sélectionnez un type de véhicule&#8230;</string>
+    <string name="vehicle_type_car">Voiture</string>
+    <string name="vehicle_type_boat">Bateau</string>
+    <string name="brand">Marque</string>
+    <string name="model">Modèle</string>
+    <string name="fuel">Carburant</string>
+    <string name="power">Puissance</string>
+    <string name="year">Année</string>
+    <string name="type">Catégorie</string>
+    <string name="kilometers">Kilomètres</string>
+    <string name="hours">Nombre d\'heures</string>
+    <string name="send">Envoyer</string>
 </resources>
