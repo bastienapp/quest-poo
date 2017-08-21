@@ -9,17 +9,17 @@ import android.graphics.drawable.Drawable;
 
 public class VehicleBoat extends Vehicle {
 
-    private String type;
+    private String category;
     private String hours;
 
-    VehicleBoat(String brand, String model, String fuel, String power, String year, String type, String hours) {
+    VehicleBoat(String brand, String model, String fuel, String power, String year, String category, String hours) {
         super(brand, model, fuel, power, year);
-        setType(type);
+        setCategory(category);
         setHours(hours);
     }
 
-    private void setType(String type) {
-        this.type = type;
+    private void setCategory(String category) {
+        this.category = category;
     }
 
     private void setHours(String hours) {

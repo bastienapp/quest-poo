@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 LinearLayout form = (LinearLayout) findViewById(R.id.vehicle_form);
                 form.setVisibility(i > 0 ? View.VISIBLE : View.GONE);
 
-                EditText type = (EditText) findViewById(R.id.type);
+                EditText type = (EditText) findViewById(R.id.category);
                 EditText kilometers = (EditText) findViewById(R.id.kilometers);
                 EditText hours = (EditText) findViewById(R.id.hours);
                 switch (i) {

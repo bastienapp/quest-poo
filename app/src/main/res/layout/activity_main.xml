@@ -51,10 +51,10 @@
             android:hint="@string/year" />
 
         <EditText
-            android:id="@+id/type"
+            android:id="@+id/category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/type" />
+            android:hint="@string/category" />
 
         <EditText
             android:id="@+id/kilometers"
