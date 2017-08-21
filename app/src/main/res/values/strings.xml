@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">POO</string>
+    <string name="app_name">AutoBateau</string>
     <string name="vehicle_type_select">Sélectionnez un type de véhicule&#8230;</string>
     <string name="vehicle_type_car">Voiture</string>
     <string name="vehicle_type_boat">Bateau</string>

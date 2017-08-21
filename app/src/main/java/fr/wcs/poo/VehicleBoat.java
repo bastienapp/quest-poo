@@ -26,6 +26,13 @@ public class VehicleBoat extends Vehicle {
         this.hours = hours;
     }
 
+    public String getDescription(Context context) {
+        String lineSep = System.getProperty("line.separator");
+        return super.getDescription(context)
+                + context.getResources().getString(R.string.category) + " : " + category + lineSep
+                + context.getResources().getString(R.string.hours) + " : " + hours;
+    }
+
     public Drawable getVehicleIcon(Context context) {
         return context.getResources().getDrawable(R.drawable.ic_directions_boat_black_24dp);
     }

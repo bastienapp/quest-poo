@@ -20,6 +20,11 @@ public class VehicleCar extends Vehicle {
         this.kilometers = kilometers;
     }
 
+    public String getDescription(Context context) {
+        return super.getDescription(context)
+                + context.getResources().getString(R.string.kilometers) + " : " + kilometers;
+    }
+
     public Drawable getVehicleIcon(Context context) {
         return context.getResources().getDrawable(R.drawable.ic_directions_car_black_24dp);
     }

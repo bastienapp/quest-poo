@@ -3,6 +3,8 @@ package fr.wcs.poo;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 
+import static android.util.Base64.CRLF;
+
 /**
  * Created by bkrettly on 21/08/17.
  */
@@ -41,6 +43,15 @@ class Vehicle {
 
     private void setYear(String year) {
         this.year = year;
+    }
+
+    public String getDescription(Context context) {
+        String lineSep = System.getProperty("line.separator");
+        return context.getResources().getString(R.string.brand) + " : " + brand + lineSep
+                + context.getResources().getString(R.string.model) + " : " + model + lineSep
+                + context.getResources().getString(R.string.fuel) + " : " + fuel + lineSep
+                + context.getResources().getString(R.string.power) + " : " + power + lineSep
+                + context.getResources().getString(R.string.year) + " : " + year + lineSep;
     }
 
     public Drawable getVehicleIcon(Context context) {
