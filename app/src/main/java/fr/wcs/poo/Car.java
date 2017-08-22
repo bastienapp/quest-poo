@@ -7,12 +7,12 @@ import android.graphics.drawable.Drawable;
  * Created by bkrettly on 21/08/17.
  */
 
-public class VehicleCar extends Vehicle {
+public class Car extends Vehicle {
 
     private String kilometers;
 
-    public VehicleCar(String brand, String model, String fuel, String power, String year, String kilometers) {
-        super(brand, model, fuel, power, year);
+    public Car(String brand, String model, String kilometers) {
+        super(brand, model);
         setKilometers(kilometers);
     }
 

@@ -7,19 +7,13 @@ import android.graphics.drawable.Drawable;
  * Created by bkrettly on 21/08/17.
  */
 
-public class VehicleBoat extends Vehicle {
+public class Boat extends Vehicle {
 
-    private String category;
     private String hours;
 
-    VehicleBoat(String brand, String model, String fuel, String power, String year, String category, String hours) {
-        super(brand, model, fuel, power, year);
-        setCategory(category);
+    Boat(String brand, String model, String hours) {
+        super(brand, model);
         setHours(hours);
-    }
-
-    private void setCategory(String category) {
-        this.category = category;
     }
 
     private void setHours(String hours) {
@@ -27,9 +21,7 @@ public class VehicleBoat extends Vehicle {
     }
 
     public String getDescription(Context context) {
-        String lineSep = System.getProperty("line.separator");
         return super.getDescription(context)
-                + context.getResources().getString(R.string.category) + " : " + category + lineSep
                 + context.getResources().getString(R.string.hours) + " : " + hours;
     }
 

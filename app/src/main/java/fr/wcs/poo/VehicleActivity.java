@@ -17,21 +17,17 @@ public class VehicleActivity extends AppCompatActivity {
         int type = intent.getIntExtra("type", 0);
         String brand = intent.getStringExtra("brand");
         String model = intent.getStringExtra("model");
-        String fuel = intent.getStringExtra("fuel");
-        String power = intent.getStringExtra("power");
-        String year = intent.getStringExtra("year");
-        String category = intent.getStringExtra("category");
         String kilometers = intent.getStringExtra("kilometers");
         String hours = intent.getStringExtra("hours");
 
         Vehicle vehicle = null;
         switch (type) {
             case 1:
-                vehicle = new VehicleCar(brand, model, fuel, power, year, kilometers);
+                vehicle = new Car(brand, model, kilometers);
                 break;
 
             case 2:
-                vehicle = new VehicleBoat(brand, model, fuel, power, year, category, hours);
+                vehicle = new Boat(brand, model, hours);
         }
 
         if (vehicle != null) {

@@ -13,66 +13,36 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp" />
 
-    <LinearLayout
-        android:id="@+id/vehicle_form"
+    <EditText
+        android:id="@+id/brand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:hint="@string/brand" />
 
-        <EditText
-            android:id="@+id/brand"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/brand" />
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/model" />
 
-        <EditText
-            android:id="@+id/model"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/model" />
+    <EditText
+        android:id="@+id/kilometers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kilometers"
+        android:visibility="gone" />
 
-        <EditText
-            android:id="@+id/fuel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/fuel" />
+    <EditText
+        android:id="@+id/hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hours"
+        android:visibility="gone" />
 
-        <EditText
-            android:id="@+id/power"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/power" />
-
-        <EditText
-            android:id="@+id/year"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/year" />
-
-        <EditText
-            android:id="@+id/category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/category" />
-
-        <EditText
-            android:id="@+id/kilometers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/kilometers" />
-
-        <EditText
-            android:id="@+id/hours"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hours" />
-
-        <Button
-            android:id="@+id/send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/send" />
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/send" />
 </LinearLayout>
