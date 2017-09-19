@@ -19,15 +19,15 @@ public class VehicleActivity extends AppCompatActivity {
         String model = intent.getStringExtra("model");
         String kilometers = intent.getStringExtra("kilometers");
         String hours = intent.getStringExtra("hours");
+        String power = intent.getStringExtra("power");
 
         Vehicle vehicle = null;
-        switch (type) {
-            case 1:
-                vehicle = new Car(brand, model, kilometers);
-                break;
-
-            case 2:
-                vehicle = new Boat(brand, model, hours);
+        if (type == 1) {
+            vehicle = new Car(brand, model, kilometers);
+        } else if (type == 2) {
+            vehicle = new Boat(brand, model, hours);
+        } else if (type == 3) {
+            vehicle = new Moto(brand, model, power);
         }
 
         if (vehicle != null) {

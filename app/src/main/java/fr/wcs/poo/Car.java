@@ -13,10 +13,6 @@ public class Car extends Vehicle {
 
     public Car(String brand, String model, String kilometers) {
         super(brand, model);
-        setKilometers(kilometers);
-    }
-
-    private void setKilometers(String kilometers) {
         this.kilometers = kilometers;
     }
 

@@ -13,22 +13,13 @@ class Vehicle {
     private String model;
 
     Vehicle(String brand, String model) {
-        setBrand(brand);
-        setModel(model);
-    }
-
-    private void setBrand(String brand) {
         this.brand = brand;
-    }
-
-    private void setModel(String model) {
         this.model = model;
     }
 
     public String getDescription(Context context) {
-        String lineSep = System.getProperty("line.separator");
-        return context.getResources().getString(R.string.brand) + " : " + brand + lineSep
-                + context.getResources().getString(R.string.model) + " : " + model + lineSep;
+        return context.getResources().getString(R.string.brand) + " : " + brand + "\n"
+                + context.getResources().getString(R.string.model) + " : " + model + "\n";
     }
 
     public Drawable getVehicleIcon(Context context) {

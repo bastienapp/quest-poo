@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText model = (EditText) findViewById(R.id.model);
         final EditText kilometers = (EditText) findViewById(R.id.kilometers);
         final EditText hours = (EditText) findViewById(R.id.hours);
+        final EditText power = (EditText) findViewById(R.id.power);
         final Button send = (Button) findViewById(R.id.send);
 
         final Spinner spinner = (Spinner) findViewById(R.id.vehicle_type);
@@ -33,18 +34,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 send.setEnabled(i > 0);
-                switch (i) {
-                    case 1:
-                        // car
-                        kilometers.setVisibility(View.VISIBLE);
-                        hours.setVisibility(View.GONE);
-                        break;
-
-                    case 2:
-                        // boat
-                        kilometers.setVisibility(View.GONE);
-                        hours.setVisibility(View.VISIBLE);
-                        break;
+                if (i == 1) {
+                    // car
+                    kilometers.setVisibility(View.VISIBLE);
+                    hours.setVisibility(View.GONE);
+                    power.setVisibility(View.GONE);
+                } else if (i == 2) {
+                    // boat
+                    kilometers.setVisibility(View.GONE);
+                    hours.setVisibility(View.VISIBLE);
+                    power.setVisibility(View.GONE);
+                } else if (i == 3) {
+                    // moto
+                    kilometers.setVisibility(View.GONE);
+                    hours.setVisibility(View.GONE);
+                    power.setVisibility(View.VISIBLE);
                 }
             }
 
@@ -63,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("model", model.getText().toString());
                 intent.putExtra("kilometers", kilometers.getText().toString());
                 intent.putExtra("hours", hours.getText().toString());
+                intent.putExtra("power", power.getText().toString());
                 startActivity(intent);
             }
         });

@@ -7,21 +7,21 @@ import android.graphics.drawable.Drawable;
  * Created by bkrettly on 21/08/17.
  */
 
-public class Boat extends Vehicle {
+public class Moto extends Vehicle {
 
-    private String hours;
+    private String power;
 
-    Boat(String brand, String model, String hours) {
+    public Moto(String brand, String model, String power) {
         super(brand, model);
-        this.hours = hours;
+        this.power = power;
     }
 
     public String getDescription(Context context) {
         return super.getDescription(context)
-                + context.getResources().getString(R.string.hours) + " : " + hours;
+                + context.getResources().getString(R.string.power) + " : " + power;
     }
 
     public Drawable getVehicleIcon(Context context) {
-        return context.getResources().getDrawable(R.drawable.ic_directions_boat_black_24dp);
+        return context.getResources().getDrawable(R.drawable.ic_motorcycle_black_24dp);
     }
 }

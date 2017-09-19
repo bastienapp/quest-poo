@@ -4,5 +4,6 @@
         <item>@string/vehicle_type_select</item>
         <item>@string/vehicle_type_car</item>
         <item>@string/vehicle_type_boat</item>
+        <item>@string/vehicle_type_moto</item>
     </string-array>
 </resources>

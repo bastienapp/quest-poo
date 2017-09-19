@@ -39,6 +39,13 @@
         android:hint="@string/hours"
         android:visibility="gone" />
 
+    <EditText
+        android:id="@+id/power"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/power"
+        android:visibility="gone" />
+
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
